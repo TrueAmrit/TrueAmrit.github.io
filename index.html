@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Notes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="main" class="main">
+<div id="header" class="header">Personal Notes </div>
+<div id="upper" class="upper">
+    <form action="#" type="submit" id="form" class="form">
+    <div id="tittle-upper" class="tittle-upper">
+        <input type="text" id="tittle" class="tittle" required placeholder="Enter tittle here...">
+    </div>
+    <div id="note-upper" class="note-upper">
+        <textarea rows="5" id="note" class="note" placeholder="Enter note here..."></textarea>
+    </div>
+    <button type="submit" onclick="addlist()" class="btn">Add Note</button>
+</form>
+</div>
+<div id="lower" class="lower"></div>
+<div id="footer" class="footer">Nothing to show! use 'Add Note' Section for creating your notes.</div>
+
+</div>
+<div id="delete" class="delete">
+    <h2>Do you want to delete current note?</h2>
+    <button id="dltbtn" class="dltbtn">Delete</button>
+    <button id="cancelbtn" class="cancelbtn">Cancel</button>
+
+</div>
+<div id="edit" class="edit">
+    <label><b>Tittle:</b></label>
+    <input type="text" id="edit_tittle" class="edit_tittle" required >
+    <label><b>Note:</b></label>
+    <textarea rows="5" id="edit_note" class="edit_note" style="height: 66px; width: 540px;" ></textarea>
+    <button id="savebtn" class="savebtn">Save</button>
+    <button id="cancel_btn" class="cancel_btn">Cancel</button>
+</div>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
